@@ -1,163 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Company Website</title>
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="font-sans bg-gray-100 text-gray-900">
-  <!-- Navbar -->
-  <nav class="flex justify-between items-center bg-blue-600 text-white px-6 py-4 shadow-md fixed w-full top-0">
-    <div class="logo flex items-center space-x-2">
-      <img src="/logo.png" alt="Logo Perusahaan" class="w-10 h-10">
-      <span class="font-bold text-lg">Company</span>
-    </div>
-    <ul class="flex space-x-6">
-      <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
-      <li><a href="#profile" class="hover:text-yellow-300">Profile</a></li><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Company Website</title>
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Website</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans bg-gray-50 text-gray-900">
-  <!-- Navbar -->
-  <nav class="fixed top-0 w-full bg-blue-600 text-white shadow-md z-10">
-    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-      <div class="flex items-center space-x-2">
-        <img src="/logo.png" alt="Logo" class="w-10 h-10">
-        <span class="font-bold text-lg">Company</span>
-      </div>
-      <ul class="flex space-x-6">
-        <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
-        <li><a href="#profile" class="hover:text-yellow-300">Profil Kami</a></li>
-        <li><a href="#contact" class="hover:text-yellow-300">Hubungi Kami</a></li>
-      </ul>
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-blue-600 text-white shadow-md z-10">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+            <div class="flex items-center space-x-2">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png" alt="Logo" class="w-10 h-10 rounded-full object-cover border-2 border-white shadow-md">
+            </div>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+                    <li><a href="#profile" class="hover:text-yellow-300">Profil Kami</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-300">Hubungi Kami</a></li>
+                </ul>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header id="home" class="h-screen flex flex-col md:flex-row items-center justify-center bg-white to-indigo-600 text-black px-6">
+        <div class="flex-1 text-center md:text-left space-y-4">
+        <h1 class="text-4xl md:text-6xl font-bold">Selamat Datang di RevoUpedia</h1>
+        <p class="text-lg md:text-xl">Edutech terkemuka yang membekali keterampilan digital untuk bersaing di dunia global.</p>
+        <h2 class="mt-4 text-2xl font-semibold">
+            Halo <span id="username" class="text-yellow-300">Nama</span> 👋
+        </h2>
     </div>
-  </nav>
 
-  <!-- Banner -->
-  <header id="home" class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center px-6">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">Selamat Datang di Perusahaan Kami</h1>
-    <p class="text-lg md:text-xl">Mitra terpercaya untuk solusi bisnis Anda</p>
-    <h2 class="mt-6 text-2xl font-semibold">Halo <span id="username" class="text-yellow-300">Nama</span> 👋</h2>
-  </header>
-
-  <!-- About -->
-  <section id="about" class="max-w-4xl mx-auto py-16 px-6">
-    <h2 class="text-3xl font-bold mb-6 text-center">Tentang Perusahaan</h2>
-    <p class="text-gray-700 leading-relaxed text-justify">
-      Kami adalah perusahaan yang berfokus pada inovasi dan memberikan solusi terbaik untuk klien kami.
-    </p>
-  </section>
-
-  <!-- Vision & Mission -->
-  <section id="vision-mission" class="bg-gray-100 py-16 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6 text-center">Visi & Misi</h2>
-      <p class="text-gray-700 leading-relaxed text-justify">
-        Visi kami adalah menjadi perusahaan terdepan di bidang teknologi dan layanan.  
-        Misi kami adalah menghadirkan solusi yang inovatif, efektif, dan bermanfaat untuk masyarakat.
-      </p>
+    <div class="flex-1 flex justify-center md:justify-end mt-6 md:mt-0">
+        <img src="https://kampusmerdeka.um.ac.id/wp-content/uploads/2022/07/Kampus-Merdeka-x-Revo.png" 
+            alt="Gambar Perusahaan" 
+            class="rounded-lg shadow-lg w-80 md:w-[400px] mix-blend-multiply">
     </div>
-  </section>
+    </header>
 
-  <!-- Profile -->
-  <section id="profile" class="max-w-6xl mx-auto py-16 px-6">
-    <h2 class="text-3xl font-bold mb-6 text-center">Profil Kami</h2>
-    <div class="grid md:grid-cols-2 gap-8 items-center">
-      <img src="/banner-foto.jpg" alt="Banner Foto" class="rounded-xl shadow-lg">
-      <div>
-        <p class="text-gray-700 mb-4">
-          Perusahaan kami berdiri sejak tahun 2000 dan telah melayani ribuan pelanggan.  
-          Dengan pengalaman panjang, kami terus berkembang untuk memenuhi kebutuhan pasar.
+    <!-- About -->
+<section id="about" class="max-w-6xl mx-auto py-16 px-6 flex flex-col md:flex-row items-center gap-8 bg-yellow-300 bg-auto">
+    
+    <!-- Gambar kiri -->
+    <div class="flex-1 flex justify-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKUPadalbhAdirx2a8IqdOGoD3-SjeJ4Og2w&s" 
+            alt="Tentang Perusahaan" 
+            class="rounded-lg shadow-lg w-full md:w-[600px] object-cover">
+    </div>
+
+    <!-- Teks kanan -->
+    <div class="flex-1">
+        <h2 class="text-3xl font-bold mb-6">Tentang Perusahaan</h2>
+        <p class="text-gray-700 leading-relaxed text-justify">
+            RevoU merupakan Akademi Pembelajaran online yang diciptakan untuk
+            mengembangkan karir dan membekali siswa dengan keterampilan dan pendidikan
+            yang dibutuhkan pada era new digital economy. RevoU mendidik dan melatih
+            siswa yang ingin masuk atau bekerja di industri teknologi dan menghubungkan
+            mereka dengan instruktur dari perusahaan teknologi terkemuka di Asia Tenggara.
         </p>
-        <ul class="list-disc ml-6 text-gray-700">
-          <li>Sejarah panjang dengan pengalaman global</li>
-          <li>Tim profesional dan berdedikasi</li>
-          <li>Layanan modern berbasis teknologi</li>
-        </ul>
-      </div>
     </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact" class="max-w-4xl mx-auto py-16 px-6">
-    <h2 class="text-3xl font-bold mb-6 text-center">Hubungi Kami</h2>
-    <form id="messageForm" class="space-y-4 bg-white p-6 rounded-lg shadow-lg">
-      <input type="text" id="name" placeholder="Nama Anda" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
-      <input type="email" id="email" placeholder="Email Anda" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
-      <textarea id="message" placeholder="Pesan Anda" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none h-32"></textarea>
-      <button type="submit"
-        class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Kirim</button>
-    </form>
-    <div id="formResult" class="mt-4 text-center font-semibold"></div>
-  </section>
+</section>
 
-  <!-- Script -->
-  <script src="js/script.js"></script>
-</body>
-</html>
-
-      <li><a href="#contact" class="hover:text-yellow-300">Message Us</a></li>
-    </ul>
-  </nav>
-
-  <!-- Banner -->
-  <header id="home" class="banner bg-blue-500 text-white h-[60vh] flex items-center justify-center text-center">
-    <h1 class="text-4xl md:text-6xl font-bold">Welcome to Our Company</h1>
-  </header>
-
-  <!-- About the Company -->
-  <section id="about" class="max-w-4xl mx-auto py-12 px-6">
-    <h2 class="text-2xl font-bold mb-4">About the Company</h2>
-    <p class="text-gray-700">Deskripsi singkat tentang perusahaan.</p>
-  </section>
-
-  <!-- Vision & Mission -->
-  <section id="vision-mission" class="bg-gray-200 py-12 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4">Vision & Mission</h2>
-      <p class="text-gray-700">Visi dan misi perusahaan.</p>
+    <!-- Vision & Mission -->
+    <section id="vision-mission" class="bg-gray-100 py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+                <!--<h2 class="text-3xl font-bold mb-6">Visi & Misi</h2>-->
+                <div class="space-y-4">
+                    <h3 class=" font-semibold text-blue-600">RevoUpedia</h3>
+                    <p class="text-yellow-400 leading-relaxed text-justify text-xl">
+                        Menjadi perusahaan edutech terdepan di Indonesia yang membantu masyarakat meningkatkan keterampilan digital dan teknologi untuk memperoleh peluang karir yang lebih baik.
+                    </p>
+                    
+                    <p class="text-gray-700 leading-relaxed text-justify">
+                        Dengan visi untuk menjadi perusahaan edutech yang membantu masyarakat meningkatkan keterampilan digital dan teknologi, RevoUpedia mengemban misi untuk:
+                    </p>
+                    
+                    <ul class="list-disc ml-6 text-gray-700 space-y-2">
+                        <li>Menyediakan pendidikan online yang terjangkau dan berkualitas, khususnya di bidang Software Engineering dan Data Analytics.</li>
+                        <li>Menghadirkan pembelajaran yang praktis dan relevan melalui kelas interaktif, mentoring, studi kasus, dan proyek nyata.</li>
+                        <li>Membekali peserta dengan hard skills (pemrograman, data analytics, UI/UX, dsb.) serta soft skills (komunikasi, teamwork, career development) agar siap kerja di industri teknologi.</li>
+                        <li>Menjadi jembatan bagi masyarakat Indonesia untuk meningkatkan daya saing dan peluang kerja di era digital.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex justify-center lg:justify-end">
+                <img src="https://img.lovepik.com/photo/20211130/medium/lovepik-business-people-meeting-discussion-picture_501267045.jpg" 
+                    alt="Business Meeting" 
+                    class="w-full h-auto rounded-lg shadow-lg max-w-lg">
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- Our Profile -->
-  <section id="profile" class="max-w-4xl mx-auto py-12 px-6">
-    <h2 class="text-2xl font-bold mb-4">Our Profile</h2>
-    <p class="text-gray-700">Profil lengkap perusahaan. (Bisa ditambahkan foto, sejarah, dll)</p>
-  </section>
+    <!-- Profile -->
+    <section id="profile" class="max-w-6xl mx-auto py-16 px-6">
+        
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png" alt="Logo" class="w-90 h-90 rounded-full object-cover border-2 border-white shadow-md">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Profil Kami</h2>
+            <br class="text-gray-700 mb-4">
+            RevoU adalah perusahaan edutech Indonesia yang berdiri sejak 2019, didirikan oleh Matteo Sutto bersama Shafiq Pontoh dan Surya Setiyaputra. 
+            RevoU fokus membantu masyarakat meningkatkan keterampilan dan peluang karir melalui pendidikan online terjangkau.
+            <br><br>
+            Program RevoU berfokus pada dua bidang utama di industri teknologi: Software Engineering dan Data Analytics, yang merupakan posisi kunci di hampir semua perusahaan teknologi.
+            <br><br>
+            Peserta belajar melalui kombinasi kelas interaktif dengan praktisi industri, praktik langsung, studi kasus, dan simulasi, sehingga memahami baik konsep maupun aplikasi praktis. Program mencakup:
+            </p>
+                <ul class="list-disc ml-6 text-gray-700">
+                    <li>Data Processing & Visualization</li>
+                    <li>Web Development & Front-End Development</li>
+                    <li>Career Development</li>
+                </ul>
+                <br class="text-gray-700 mb-4">
+                RevoU membekali peserta untuk siap berkarir di dunia teknologi dengan kompetensi yang relevan.
+            </p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Welcoming Speech -->
-  <section id="welcome" class="bg-blue-100 py-12 px-6 text-center">
-    <h2 class="text-2xl font-bold">Hi <span id="username" class="text-blue-600">Name</span> 👋</h2>
-  </section>
+    <!-- Contact -->
+    <section id="contact" class="max-w-4xl mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold mb-6 text-center">Hubungi Kami</h2>
+            <form id="messageForm" class="space-y-4 bg-white p-6 rounded-lg shadow-lg">
+                <input type="text" id="name" placeholder="Nama Anda" required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
+                <input type="email" id="email" placeholder="Email Anda" required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
+                <textarea id="message" placeholder="Pesan Anda" required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none h-32"></textarea>
+                <button type="submit"
+                    class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Kirim</button>
+            </form>
+                <div id="formResult" class="mt-4 text-center font-semibold"></div>
+    </section>
 
-  <!-- Message Us -->
-  <section id="contact" class="max-w-4xl mx-auto py-12 px-6">
-    <h2 class="text-2xl font-bold mb-6">Message Us</h2>
-    <form id="messageForm" class="space-y-4">
-      <input type="text" id="name" placeholder="Your Name" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
-      <input type="email" id="email" placeholder="Your Email" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
-      <textarea id="message" placeholder="Your Message" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none h-32"></textarea>
-      <button type="submit"
-        class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Send</button>
-    </form>
-    <div id="formResult" class="mt-4 text-green-600 font-semibold"></div>
-  </section>
-
-  <!-- Panggil file JS -->
-  <script src="js/script.js"></script>
+    <!-- Script -->
+    <script src="js/script.js"></script>
 </body>
 </html>
