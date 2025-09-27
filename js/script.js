@@ -17,9 +17,14 @@ function welcomeMessage() {
     alert("Welcome to our company website!");
   }
 }
+//Menu
+document.getElementById("menuBtn").addEventListener("click", function() {
+  document.getElementById("mobileMenu").classList.toggle("hidden");
+});
+
 
 // Form Validation
-document.getElementById("messageForm").addEventListener("submit", function (e) {
+  document.getElementById("messageForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   // Ambil nilai form
@@ -34,6 +39,15 @@ document.getElementById("messageForm").addEventListener("submit", function (e) {
     result.innerHTML = "";
     return;
   }
+
+  // Validasi Nama: hanya huruf dan spasi
+  let namePattern = /^[A-Za-z\s]+$/;
+  if (!namePattern.test(name)) {
+  alert("⚠️ Nama hanya boleh berisi huruf dan spasi!");
+  result.innerHTML = "";
+  return;
+  }
+
 
   // Kalau sukses
   result.innerHTML = `
